@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="11dp"
+        android:text="@string/ra"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Nome" />
+
+    <TextView
+        android:id="@+id/Nome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:layout_marginBottom="122dp"
+        android:text="@string/nome"
+        app:layout_constraintBottom_toTopOf="@+id/etConsumoMedio"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etConsumoMedio"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="60dp"
+        android:ems="10"
+        android:hint="@string/etConsumoMedio"
+        android:inputType="numberDecimal"
+        android:textColorHint="@color/black"
+        android:importantForAutofill="no"
+        app:layout_constraintBottom_toTopOf="@+id/etQuantidadeCombustivel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Nome" />
+
+    <EditText
+        android:id="@+id/etQuantidadeCombustivel"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="46dp"
+        android:ems="10"
+        android:hint="@string/etQuantidadeCombustivel"
+        android:inputType="numberDecimal"
+        android:textColorHint="@color/black"
+        android:importantForAutofill="no"
+        app:layout_constraintBottom_toTopOf="@+id/tvResultado"
+        app:layout_constraintStart_toStartOf="@+id/etConsumoMedio"
+        app:layout_constraintTop_toBottomOf="@+id/etConsumoMedio" />
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="225dp"
+        android:text="@string/btnCalcular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvResultado" />
+
+    <TextView
+        android:id="@+id/tvResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="83dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnCalcular"
+        app:layout_constraintEnd_toEndOf="@+id/etQuantidadeCombustivel"
+        app:layout_constraintStart_toStartOf="@+id/etQuantidadeCombustivel"
+        app:layout_constraintTop_toBottomOf="@+id/etQuantidadeCombustivel" />
+</androidx.constraintlayout.widget.ConstraintLayout>

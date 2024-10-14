@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Autonomia Carro</string>
+    <string name="nome">Rodrigo Fortunato Martins Neves</string>
+    <string name="ra">1110482313035</string>
+    <string name="etQuantidadeCombustivel">Quantidade Combustivel</string>
+    <string name="etConsumoMedio">Consumo (km/l)</string>
+    <string name="btnCalcular">Calcular</string>
+    <string name="tvResultado">A autonomia do automóvel em metros é: </string>
+
+</resources>
